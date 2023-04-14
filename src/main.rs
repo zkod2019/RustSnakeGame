@@ -34,7 +34,7 @@ fn main() {
         [200, 200]
     ).opengl(opengl).exit_on_esc(true).build().unwrap();
 
-    let game = Game{
+    let mut game = Game{
         gl: GlGraphics::new(opengl)
     };
     let mut events = Events::new(EventSettings::new());
